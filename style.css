@@ -1,0 +1,153 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --main-font-size: 1rem;
+  --main-font-family: "Poppins", sans-serif;
+  /* 400, 500, 600, 700 */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Red);
+  background-image: url(images/bg-intro-mobile.png);
+  line-height: 1.4rem;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+}
+.container {
+  width: 90%;
+  margin: 5em auto;
+  max-width: 1110px;
+}
+.section-text {
+  color: #fff;
+  text-align: center;
+}
+h1 {
+  padding-bottom: 1em;
+  font-weight: 900;
+}
+p{
+  font-weight: 400;
+}
+button{
+  font-weight: 500;
+}
+.section-text p {
+  padding-bottom: 3.5em;
+}
+.btn-1 {
+  background-color: var(--Blue);
+  color: #fff;
+  margin-bottom: 1.3em;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1.2em 3em;
+  line-height: 1.8em;
+  letter-spacing: 1.2px;
+  width: 100%;
+  box-shadow: 0px 10px 20px #9b8c8c;
+}
+.container-form {
+  background-color: #fff;
+  border-radius: 0.75rem;
+}
+form {
+  padding: 1em;
+}
+input {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 3em;
+  margin-bottom: 1em;
+  width: 100%;
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 0.35rem;
+  font-weight: 600;
+}
+input:active {
+  border: 2px solid var(--Dark-Blue);
+}
+input::placeholder{
+  color: var(--Dark-Blue); 
+}
+.btn-2 {
+  background-color: var(--Green);
+  color: #fff;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 0.35rem;
+  padding: 1.5em 2em;
+  margin-bottom: 1em;
+}
+.btn-1:hover, .btn-2:hover{
+  cursor: pointer;
+}
+.container-form p {
+  color: var(--Grayish-Blue);
+  text-align: center;
+  font-size: smaller;
+}
+span {
+  color: var(--Red);
+}
+.attribution {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 3em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+    line-height: 1.4rem;
+  }
+  .container{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-height: 100vh;
+  /* margin: auto; */
+  /* border: 3px solid greenyellow; */
+}
+.section-text{
+  align-items: center;
+  width: 70%;
+  text-align: left;
+  padding-right: 3em;
+}
+h1{
+  width: 60%;
+  line-height: 1.4em;
+}
+.section-form{
+  width: 70%;
+  /* min-height: 90vh;
+  border: 3px solid floralwhite; */
+}
+form{
+  padding: 2em;
+}
+input{
+  font-weight: 600;
+}
+input:active {
+  border: 2px solid var(--Dark-Blue);
+}
+}
